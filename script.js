@@ -1,13 +1,14 @@
 const display = document.getElementById("display");
 const question = document.getElementById("question");
-const startBtn = document.getElementById("start");
+const startBtn = document.getElementById("starts");
+//console.log("start", startBtn);
 const countdownOverlay = document.getElementById("countdown");
 const resultModal = document.getElementById("result");
 const modalBackground = document.getElementById("modal-background");
 
 // variables
 let userText = "";
-let errorCount = 0;
+let errorCount =0;
 let startTime;
 let questionText = "";
 
@@ -121,10 +122,11 @@ const start = () => {
     }
     count--;
   }, 1000);
+ 
 };
 
 // START Countdown
-startBtn.addEventListener("click", start);
+startBtn.addEventListener("click", startBtn);
 
 // If history exists, show it
 displayHistory();
