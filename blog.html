@@ -11,8 +11,9 @@
 
 <body>
     <section class="container">
-        <h1 class="bg-primary text-center">IMPORTANT QUESTIONS</h1>
+        <h1 class="bg-success text-center text-white mt-4">IMPORTANT QUESTIONS</h1>
         <div>
+            <br>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -58,19 +59,20 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            Difference between Map,forEach, Filter and find?
+                            How to JS Event Loop works?
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">forEach(), is used to execute the same code on every element in an
-                            array but does not change the array and it returns
-                            undefined. map(), executes the same code on every element in an array and returns a new
-                            array with the updated elements.
-                            filter() ,checks every element in an array to see if it meets a certain criteria and returns
-                            a new array with the
-                            elements that return truthy for the criteria. find(), When you want to select a single
-                            element from an array.
+                        <div class="accordion-body">In a thread, the function at the top of the stack is what's
+                            currently running. The event loop is at the bottom of the
+                            stack, or at least it's underneath all JavaScript functions, so it only gets to run when all
+                            previously running
+                            JavaScript functions have returned or thrown.The Event Loop has one simple job — to monitor
+                            the Call Stack and the Callback Queue. If the Call Stack is empty, the
+                            Event Loop will take the first event from the queue and will push it to the Call Stack,
+                            which effectively runs it. Such
+                            an iteration is called a tick in the Event Loop.
                         </div>
                     </div>
                 </div>
@@ -79,17 +81,18 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
                             aria-controls="flush-collapseFour">
-                            Why we use Template String in JS?
+                            How many way to find out Undefined in Js?
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Template strings are a powerful feature of modern JavaScript
-                            released in ES6. It lets us insert/interpolate variables
-                            and expressions into strings without needing to concatenate like in older versions of
-                            JavaScript. It allows us to create
-                            strings that are complex and contain dynamic elements.
+                        <div class="accordion-body">
+                            If the value is not defined, typeof returns the ‘undefined’ string.To check if a variable is
+                            equal to null or undefined
+                            , use the loose equality (==) operator. For example, age == null returns true if the
+                            variable age is null or undefined .
                         </div>
+
                     </div>
                 </div>
             </div>
